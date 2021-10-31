@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>异动分析</title>
+  <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <div class="title">
+      <i class="logo"></i>
+      <span>异动分析</span>
+    </div>
+    <div class="user">
+      <i class="message"></i>
+      <span class="hello">你好，</span>
+      <span class="user-name">ALEAN</span>
+    </div>
+  </div>
+  <div class="content">
+    <div class="nav">
+      <div class="nav-item">
+        <i class="core"></i>
+        <span class="nav-item-name">核心看板</span>
+      </div>
+      <div class="nav-item">
+        <i class="my"></i>
+        <span class="nav-item-name">我的看板</span>
+      </div>
+      <div class="nav-item">
+        <i class="statis"></i>
+        <span class="nav-item-name">使用统计</span>
+      </div>
+      <div class="nav-item">
+        <i class="help"></i>
+        <span class="nav-item-name">帮助</span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="subject">
+        <span class="heart">核心看板</span>
+      </div>
+      <div class="box">
+        <div class="box-tag">
+          <span class="box-tag-label">业务标签</span>
+          <input class="box-tag-button" type="button" value="全部">
+          <input class="box-tag-button" type="button" value="网约车">
+          <input class="box-tag-button" type="button" value="快车">
+          <input class="box-tag-button" type="button" value="专车">
+          <input class="box-tag-button" type="button" value="出租车">
+        </div>
+        <div class="box-tag mt-20">
+          <span class="box-tag-label">主题标签</span>
+          <input class="box-tag-button" type="button" value="全部">
+          <input class="box-tag-button" type="button" value="订单">
+          <input class="box-tag-button" type="button" value="司机">
+          <input class="box-tag-button" type="button" value="乘客">
+          <input class="box-tag-button" type="button" value="安全">
+          <input class="box-tag-button" type="button" value="体验">
+          <input class="box-tag-button" type="button" value="司机招募">
+        </div>
+      </div>
+      <div class="query">
+        <div class="query-type">
+          <span class="query-type-label">名称</span>
+          <select class="query-type-select" name="name" id="name"></select>
+        </div>
+        <div class="query-type">
+          <span class="query-type-label">对比规则</span>
+          <select class="query-type-select" name="name" id="name"></select>
+        </div>
+        <div class="query-type">
+          <span class="query-type-label">异动情况</span>
+          <select class="query-type-select" name="name" id="name"></select>
+        </div>
+        <div class="query-type">
+          <span class="query-type-label">创建人</span>
+          <select class="query-type-select" name="name" id="name"></select>
+        </div>
+        <div class="query-type">
+          <input type="button" class="button search" value="查询">
+        </div>
+      </div>
+      <!--<table class="tb">
+        <tr class="tr-th">
+          <td class="th-td name">名称</td>
+          <td><i class="th-sort first"></i></td>
+          <td class="th-td tag">标签</td>
+          <td class="th-td rule">对比规则</td>
+          <td class="th-td abnormal">异动情况</td>
+          <td class="th-td change">变化率</td>
+          <td><i class="th-sort second"></i></td>
+          <td class="th-td rate">近14天变化率</td>
+          <td class="th-td visit">近15天访问量</td>
+          <td class="th-td operation">操作</td>
+        </tr>
+        <tr class="tr-1">
+          <td><i class="tr-city"></i></td>
+          <td class="tr-td profit">订单-业务毛利</td>
+          <td><input type="button" class="tr-button" value="网约车"></td>
+          <td><input type="button" class="tr-button" value="订单"></td>
+          <td class="tr-td week">周同比</td>
+          <td class="tr-td unusual">异动</td>
+          <td><i class="tr-data rise"></i></td>>
+          <td class="tr-td percentage-1">12.13%</td>
+          <td><i class="tr-floating"></i></td>>
+          <td class="tr-td value">1200</td>
+          <td class="tr-td see">查看</td>
+          <td class="tr-td show">说明</td>
+        </tr>
+        <tr class="tr-2">
+          <td class="tr-td GMV">订单-业务GMV[快车]</td>
+          <td><input type="button" class="tr-button" value="网约车"></td>>
+          <td><input type="button" class="tr-button" value="订单"></td>>
+          <td class="tr-td dayring">日环比</td>
+          <td class="tr-td usual">正常</td>
+          <td><i class="tr-data drop"></i></td>>
+          <td class="tr-td percentage-2">-2.31%</td>
+          <td><i class="tr-floating"></i></td>>
+          <td class="tr-td value">1000</td>
+          <td class="tr-td see">查看</td>
+          <td class="tr-td show">说明</td>
+        </tr>
+      </table>-->
+      <div class="tb">
+        <div class="tb-th">
+          <span class="th-td name">名称</span>
+          <i class="th-sort first"></i>
+          <span class="th-td tag">标签</span>
+          <span class="th-td rule">对比规则</span>
+          <span class="th-td abnormal">异动情况</span>
+          <span class="th-td change">变化率</span>
+          <i class="th-sort second"></i>
+          <span class="th-td rate">近14天变化率</span>
+          <span class="th-td visit">近15天访问量</span>
+          <span class="th-td operation">操作</span>
+        </div>
+        <div class="tb-tr-1">
+          <i class="tr-city"></i>
+          <span class="tr-td profit">订单-业务毛利</span>
+          <input type="button" class="tr-button" value="网约车">
+          <input type="button" class="tr-button" value="订单">
+          <span class="tr-td week">周同比</span>
+          <span class="tr-td unusual">异动</span>
+          <i class="tr-data rise"></i>
+          <span class="tr-td percentage-1">12.13%</span>
+          <i class="tr-floating"></i>
+          <span class="tr-td value">1200</span>
+          <span class="tr-td see">查看</span>
+          <span class="tr-td show">说明</span>
+        </div>
+        <div class="tb-tr-2">
+          <span class="tr-td GMV">订单-业务GMV[快车]</span>
+          <input type="button" class="tr-button" value="网约车">
+          <input type="button" class="tr-button" value="订单">
+          <span class="tr-td dayring">日环比</span>
+          <span class="tr-td usual">正常</span>
+          <i class="tr-data drop"></i>
+          <span class="tr-td percentage-2">-2.31%</span>
+          <i class="tr-floating"></i>
+          <span class="tr-td value">1000</span>
+          <span class="tr-td see">查看</span>
+          <span class="tr-td show">说明</span>
+        </div>
+        <div class="tb-tr-3">
+          <span class="tr-td GMV">订单-业务GMV[快车]</span>
+          <input type="button" class="tr-button" value="司机招募…">
+          <input type="button" class="tr-button" value="订单">
+          <span class="tr-td day">日同比</span>
+          <span class="tr-td unusual">异动</span>
+          <i class="tr-data rise"></i>
+          <span class="tr-td percentage-3">5.62%</span>
+          <i class="tr-floating"></i>
+          <span class="tr-td value">1000</span>
+          <span class="tr-td apply">申请权限</span>
+          <span class="tr-td show">说明</span>
+        </div>
+        <div class="tb-tr-4">
+          <span class="tr-td number">各业务线AI和提问式评价未戴口罩订单量数…</span>
+          <input type="button" class="tr-button" value="司机招募…">
+          <input type="button" class="tr-button" value="订单">
+          <span class="tr-td day">日同比</span>
+          <span class="tr-td unusual">异动</span>
+          <i class="tr-data drop"></i>
+          <span class="tr-td percentage-2">-2.31%</span>
+          <i class="tr-floating"></i>
+          <span class="tr-td value">1000</span>
+          <span class="tr-td apply">申请权限</span>
+          <span class="tr-td show">说明</span>
+        </div>
+        <div class="tb-tr-5">
+          <span class="tr-td GMV">订单-业务GMV[快车]</span>
+          <input type="button" class="tr-button" value="司机招募…">
+          <input type="button" class="tr-button" value="订单">
+          <span class="tr-td day">日同比</span>
+          <span class="tr-td unusual">异动</span>
+          <i class="tr-data drop"></i>
+          <span class="tr-td percentage-2">-2.31%</span>
+          <i class="tr-floating"></i>
+          <span class="tr-td value">1000</span>
+          <span class="tr-td apply">申请权限</span>
+          <span class="tr-td show">说明</span>
+        </div>
+        <div class="tb-tr-6">
+          <span class="tr-td GMV">订单-业务GMV[快车]</span>
+          <input type="button" class="tr-button" value="司机招募…">
+          <input type="button" class="tr-button" value="订单">
+          <span class="tr-td day">日同比</span>
+          <span class="tr-td unusual">异动</span>
+          <i class="tr-data rise"></i>
+          <span class="tr-td percentage-3">5.62%</span>
+          <i class="tr-floating"></i>
+          <span class="tr-td value">1000</span>
+          <span class="tr-td apply">申请权限</span>
+          <span class="tr-td show">说明</span>
+        </div>
+        <div class="tb-foot">
+          <input type="button" class="foot-button ml-856" value="1">
+          <input type="button" class="foot-button" value="2">
+          <input type="button" class="foot-button" value="3">
+          <input type="button" class="foot-button" value="4">
+          <span class="foot-item">…</span>
+          <input type="button" class="foot-button" value="20">
+          <span class="foot-jump">跳至</span>
+          <input type="button" class="foot-button-nothing">
+          <span class="foot-page">页</span>
+          <select name="name" id="name" class="foot-select"><option>10条/页</option></select>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

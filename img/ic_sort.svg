@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图标/ic_sort</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="我的看板-我创建的-标注" transform="translate(-268.000000, -381.000000)" fill-rule="nonzero">
+            <g id="列表" transform="translate(200.000000, 370.000000)">
+                <g id="tit">
+                    <g transform="translate(40.000000, 7.000000)" id="编组-10">
+                        <g>
+                            <g id="图标/ic_sort" transform="translate(28.000000, 4.000000)">
+                                <polygon id="路径" fill="#387DFF" points="0.119668087 3.59787322 5.88033397 3.59787322 2.99999566 0.141473694 0.119657345 3.59787322"></polygon>
+                                <polygon id="路径" fill="#AAAFB8" points="5.88034471 5.90213958 0.11967883 5.90213958 3.00001714 9.35853911 5.88035545 5.90213958"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
